@@ -125,3 +125,52 @@ tr:nth-child(even) {
 .dark > a {
   color: white;
 }
+
+.navbar{
+  background-color: lightblue;
+  width: 100%;
+}
+
+.navbar-dark{
+  background-color: grey;
+  width: 100%;
+  color:white
+}
+
+.navbar-dark h4{
+  color:white
+}
+
+.navbar-dark button {
+  color: #fff;
+  background-color: #333;
+  border: 1px solid #555;
+  border-radius: 5px;
+  padding: 10px 20px;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.navbar-dark button:hover {
+  background-color: #555;
+  color: #fff;
+}
+
+.navbar button {
+  color: #000;
+  background-color: #eee;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  padding: 10px 20px;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.navbar button:hover {
+  background-color: #ddd;
+  color: #000;
+}

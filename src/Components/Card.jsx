@@ -21,14 +21,6 @@ const Card = ({ name, username, id }) => {
       <button onClick={addFav} className="favButton">
         Add fav
       </button>
-      {/* <div class="card dark-theme">
-        <a href="/dentista/2">
-          <img src="./images/doctor.jpg" alt="doctor-image" />
-          <h4>Ervin Howell</h4>
-          <h5>@Antonette </h5>
-        </a>
-        <button class="favButton">Add Favorite</button>
-      </div> */}
     </div>
   );
 };
