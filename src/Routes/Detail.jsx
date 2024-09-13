@@ -1,19 +1,37 @@
-import React from 'react'
-
-
+import React from "react";
+import { useParams } from "react-router-dom";
+import { useContextGlobal } from "../Components/utils/global.context";
+import { useEffect } from "react";
 //Este componente debera ser estilado como "dark" o "light" dependiendo del theme del Context
 
 const Detail = () => {
- 
-  // Consumiendo el parametro dinamico de la URL deberan hacer un fetch a un user en especifico
-
+  const params = useParams();
+  const { state, fetchDentistaById } = useContextGlobal();
+  const id = params.id;
+  useEffect(() => {
+    if (id) {
+      fetchDentistaById(id);
+    }
+  }, []);
+  console.log(state.selectedDentista);
   return (
-    <>
-      <h1>Detail Dentist id </h1>
-      {/* aqui deberan renderizar la informacion en detalle de un user en especifico */}
-      {/* Deberan mostrar el name - email - phone - website por cada user en especifico */}
-    </>
-  )
-}
+    <div>
+      {state.selectedDentista ? (
+        <div
+          className={state.theme === "dark" ? "dentistId-dark" : "dentistId"}
+        >
+          <h2>{state.selectedDentista.name}</h2>
+          <img src="../../public/images/doctor.jpg" alt="doctor-image" />
+          <p>{state.selectedDentista.email}</p>
+          <p>{state.selectedDentista.phone}</p>
+          <p>{state.selectedDentista.website}</p>
+          {/* Render other details here */}
+        </div>
+      ) : (
+        <p>Loading...</p>
+      )}
+    </div>
+  );
+};
 
-export default Detail
+export default Detail;

@@ -129,12 +129,16 @@ tr:nth-child(even) {
 .navbar{
   background-color: lightblue;
   width: 100%;
+  display:flex;
+  align-items: center;
 }
 
 .navbar-dark{
   background-color: grey;
   width: 100%;
-  color:white
+  color:white;
+  display:flex;
+  align-items: center;
 }
 
 .navbar-dark h4{
@@ -151,6 +155,7 @@ tr:nth-child(even) {
   font-weight: bold;
   cursor: pointer;
   transition: background-color 0.3s, color 0.3s;
+  height: 50px;
 }
 
 .navbar-dark button:hover {
@@ -168,9 +173,57 @@ tr:nth-child(even) {
   font-weight: bold;
   cursor: pointer;
   transition: background-color 0.3s, color 0.3s;
+  height: 50px;
+
 }
 
 .navbar button:hover {
   background-color: #ddd;
   color: #000;
+}
+
+/* Estilo para el tema claro */
+.dentistId {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-left: auto;
+  width: 100%;
+  color: #333; /* Color de texto oscuro para el tema claro */
+  background-color: #f9f9f9; /* Fondo claro */
+  border: 1px solid #ddd; /* Borde sutil para definir el contenedor */
+  border-radius: 8px; /* Bordes redondeados para suavizar el diseño */
+  padding: 20px; /* Espaciado interno para mayor comodidad */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Sombra ligera para efecto de profundidad */
+}
+
+/* Estilo para el tema oscuro */
+.dentistId-dark {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-left: auto;
+  width: 100%;
+  color: #e0e0e0; /* Color de texto claro para el tema oscuro */
+  background-color: #333; /* Fondo oscuro */
+  border: 1px solid #444; /* Borde sutil para definir el contenedor */
+  border-radius: 8px; /* Bordes redondeados para suavizar el diseño */
+  padding: 20px; /* Espaciado interno para mayor comodidad */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5); /* Sombra más pronunciada para efecto de profundidad */
+}
+
+/* Puedes agregar una transición para un cambio de tema más suave */
+.dentistId,
+.dentistId-dark {
+  transition: all 0.3s ease-in-out; /* Transición suave para los cambios de estilo */
+}
+
+.dentistId-dark img{
+  width:30%
+}
+
+.dentistId img{
+  width:30%
 }
