@@ -5,9 +5,9 @@ import { useContextGlobal } from "../Components/utils/global.context";
 //Este componente debera ser estilado como "dark" o "light" dependiendo del theme del Context
 
 const Home = () => {
-  const { state, dispatch } = useContextGlobal();
+  const { state} = useContextGlobal();
   return (
-    <main className="">
+    <main className={state.theme==="dark" ? "home-dark":"home"}>
       <h1>Home</h1>
       <div className="card-grid">
         {/* Aqui deberias renderizar las cards */}

@@ -6,6 +6,37 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
+.home {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-left: auto;
+  width: 100%;
+  color: #333;
+  background-color: #f9f9f9;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 20px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease-in-out;
+}
+
+.home-dark {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-left: auto;
+  width: 100%;
+  color: #e0e0e0;
+  background-color: #333;
+  border: 1px solid #444;
+  border-radius: 8px;
+  padding: 20px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+  transition: all 0.3s ease-in-out;
+}
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
@@ -70,16 +101,7 @@ form{
   margin: 0 auto;
 }
 
-.card{
-  display: flex;
-  justify-content: space-around;
-  text-align: center;
-  flex-direction: column;
-  align-items: center;
-  width: 200px;
-  padding: 0.5rem 0.5rem 0 0.5rem;
-  border: 0.5px solid rgb(136, 136, 136);
-}
+
 
 .card:hover{
   border: 0.5px solid rgb(206, 217, 142);
@@ -94,6 +116,7 @@ form{
   flex-wrap: wrap;
   margin: 0 auto;
 }
+
 .card-grid img{
   width: 50%;
   height: auto;
@@ -190,12 +213,12 @@ tr:nth-child(even) {
   align-items: center;
   margin-left: auto;
   width: 100%;
-  color: #333; /* Color de texto oscuro para el tema claro */
-  background-color: #f9f9f9; /* Fondo claro */
-  border: 1px solid #ddd; /* Borde sutil para definir el contenedor */
-  border-radius: 8px; /* Bordes redondeados para suavizar el diseño */
-  padding: 20px; /* Espaciado interno para mayor comodidad */
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Sombra ligera para efecto de profundidad */
+  color: #333; 
+  background-color: #f9f9f9;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 20px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1)
 }
 
 /* Estilo para el tema oscuro */
@@ -206,12 +229,12 @@ tr:nth-child(even) {
   align-items: center;
   margin-left: auto;
   width: 100%;
-  color: #e0e0e0; /* Color de texto claro para el tema oscuro */
-  background-color: #333; /* Fondo oscuro */
-  border: 1px solid #444; /* Borde sutil para definir el contenedor */
-  border-radius: 8px; /* Bordes redondeados para suavizar el diseño */
-  padding: 20px; /* Espaciado interno para mayor comodidad */
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5); /* Sombra más pronunciada para efecto de profundidad */
+  color: #e0e0e0; 
+  background-color: #333; 
+  border: 1px solid #444; 
+  border-radius: 8px; 
+  padding: 20px; 
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
 }
 
 /* Puedes agregar una transición para un cambio de tema más suave */
@@ -227,3 +250,425 @@ tr:nth-child(even) {
 .dentistId img{
   width:30%
 }
+.card{
+  display: flex;
+  justify-content: space-around;
+  text-align: center;
+  flex-direction: column;
+  align-items: center;
+  width: 200px;
+  padding: 0.5rem 0.5rem 0 0.5rem;
+  border: 0.5px solid rgb(136, 136, 136);
+}
+.card {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 10px;
+  width: 250px;
+  color: #333;
+  background-color: #f9f9f9;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 20px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease-in-out;
+}
+.card-dark h1,h5{color:white}
+
+.card-dark{
+  display: flex;
+  justify-content: space-around;
+  text-align: center;
+  flex-direction: column;
+  align-items: center;
+  width: 200px;
+  padding: 0.5rem 0.5rem 0 0.5rem;
+  border: 0.5px solid rgb(136, 136, 136);
+}
+
+.card-dark {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 10px;
+  width: 250px;
+  color: #ffffff;
+  background-color: #333;
+  border: 1px solid #444;
+  border-radius: 8px;
+  padding: 20px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+  transition: all 0.3s ease-in-out;
+}
+
+.card img, .card-dark img {
+  max-width: 100%; /* Asegura que la imagen no se salga del contenedor */
+  height: auto; /* Mantiene la proporción de la imagen */
+  border-radius: 8px; /* Asegura que las esquinas de la imagen sean redondeadas */
+  margin-bottom: 10px; /* Añade un margen inferior para separar la imagen del texto */
+}
+
+.card h1, .card h5, .card-dark h1, .card-dark h5 {
+  text-align: center; /* Asegura que los textos estén centrados */
+  margin: 0;
+}
+
+.favButton {
+  margin-top: 10px;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  background-color: #007bff;
+  color: #fff;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.favButton:hover {
+  background-color: #0056b3;
+}
+
+
+/* Estilos para el formulario en tema claro */
+.form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 20px auto;
+  width: 80%;
+  max-width: 600px;
+  background-color: #f9f9f9;
+  color: #333;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 20px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease-in-out;
+}
+
+.form label {
+  margin: 10px 0 5px;
+  font-weight: bold;
+}
+
+.form input {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+.form button {
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  padding: 10px 20px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s ease;
+}
+
+.form button:hover {
+  background-color: #0056b3;
+}
+
+/* Estilo para el tema claro */
+.form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 10px;
+  width: 100%;
+  color: #333;
+  background-color: #f9f9f9;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 20px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease-in-out;
+}
+
+/* Estilo para el tema oscuro */
+.form-dark {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 10px;
+  width: 100%;
+  color: #e0e0e0;
+  background-color: #333;
+  border: 1px solid #444;
+  border-radius: 8px;
+  padding: 20px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+  transition: all 0.3s ease-in-out;
+}
+
+/* Estilo para el tema claro */
+.form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 20px auto; /* Centra el contenedor en la página */
+  width: 80%; /* Ajusta el ancho del contenedor */
+  max-width: 600px; /* Limita el ancho máximo para pantallas grandes */
+  color: #333;
+  background-color: #f9f9f9;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 30px; /* Espaciado interno más amplio */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra más prominente */
+  transition: all 0.3s ease-in-out;
+}
+
+/* Estilo para el tema oscuro */
+.form-dark {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 20px auto; /* Centra el contenedor en la página */
+  width: 80%; /* Ajusta el ancho del contenedor */
+  max-width: 600px; /* Limita el ancho máximo para pantallas grandes */
+  color: #e0e0e0;
+  background-color: #333;
+  border: 1px solid #444;
+  border-radius: 8px;
+  padding: 30px; /* Espaciado interno más amplio */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5); /* Sombra más prominente */
+  transition: all 0.3s ease-in-out;
+}
+
+/* Estilo para el tema claro */
+.form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 20px auto;
+  width: 90%; /* Ajusta el ancho del contenedor */
+  max-width: 600px; /* Limita el ancho máximo para pantallas grandes */
+  color: #333;
+  background-color: #f9f9f9;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 30px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease-in-out;
+}
+
+/* Estilo para el tema oscuro */
+.form-dark {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 20px auto;
+  width: 90%; /* Ajusta el ancho del contenedor */
+  max-width: 600px; /* Limita el ancho máximo para pantallas grandes */
+  color: #e0e0e0;
+  background-color: #333;
+  border: 1px solid #444;
+  border-radius: 8px;
+  padding: 30px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+  transition: all 0.3s ease-in-out;
+}
+
+/* Estilo para el formulario dentro del componente Form */
+form {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: auto;
+  width: 100%;
+}
+
+form label {
+  margin: 10px 0 5px;
+  font-size: 1rem;
+}
+
+form input {
+  width: calc(100% - 20px); /* Ajusta el ancho para compensar el padding */
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  box-sizing: border-box;
+  font-size: 1rem;
+}
+
+form button {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  background-color: #007bff;
+  color: #fff;
+  cursor: pointer;
+  font-size: 1rem;
+  transition: background-color 0.3s ease;
+}
+
+.form-dark button{
+  color:#333;
+}
+
+form button:hover {
+  background-color: #0056b3;
+}
+
+/* Estilos para los mensajes de error y éxito */
+h4 {
+  text-align: center;
+  margin: 15px 0;
+}
+
+h4.error {
+  color: red;
+}
+
+/* Estilos para el botón de reset */
+
+
+button[type="button"]:hover {
+  background-color: #5a6268;
+}
+
+/* Adaptar los estilos para el tema oscuro */
+.form-dark label {
+  color: #e0e0e0;
+}
+
+.form-dark input {
+  background-color: #444;
+  color: #e0e0e0;
+  border: 1px solid #555;
+}
+
+.form-dark button {
+  background-color: #5d6268;
+  color: #fff;
+}
+
+.form-dark button:hover {
+  background-color: #0056b3;
+}
+
+.form-dark h4 {
+  color: #e0e0e0;
+}
+
+
+/* Estilos para el contenedor de favoritos en modo claro */
+.favs {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 20px auto;
+  width: 100%;
+  height: 100%;
+
+  max-width: 1200px; /* Ajusta el ancho máximo para pantallas grandes */
+  color: #333;
+  background-color: #f9f9f9;
+  border-radius: 8px;
+  padding: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease-in-out;
+}
+
+/* Estilos para el contenedor de favoritos en modo oscuro */
+.favs-dark {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 20px auto;
+  width: 100%;
+  height: 100%;
+  max-width: 1200px; /* Ajusta el ancho máximo para pantallas grandes */
+  color: #e0e0e0;
+  background-color: #333;
+  border-radius: 8px;
+  padding: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+  transition: all 0.3s ease-in-out;
+}
+
+/* Estilos para el encabezado */
+.favs h1 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+}
+
+/* Estilos para el grid de tarjetas */
+.card-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem; /* Espaciado entre tarjetas */
+  justify-content: center; /* Centra las tarjetas horizontalmente */
+  width: 100%;
+  max-width: 1200px; /* Limita el ancho máximo para grandes cantidades de tarjetas */
+  margin: 0 auto; /* Centra el grid dentro del contenedor */
+}
+
+/* Estilo de mensaje cuando no hay favoritos */
+.favs h1 {
+  font-size: 1.5rem;
+  color: #666; /* Color de texto más suave para el mensaje */
+  text-align: center; /* Centra el texto del mensaje */
+}
+
+/* Estilos para el pie de página en modo claro */
+.footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  background-color: #f9f9f9;
+  color: #333;
+  border-top: 1px solid #ddd;
+  box-shadow: 0 -2px 4px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease-in-out;
+  position: relative;
+  bottom: 0;
+  width: 100%;
+}
+
+/* Estilos para el pie de página en modo oscuro */
+.footer-dark {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  background-color: #333;
+  color: #e0e0e0;
+  border-top: 1px solid #444;
+  box-shadow: 0 -2px 4px rgba(0, 0, 0, 0.5);
+  transition: all 0.3s ease-in-out;
+  position: relative;
+  bottom: 0;
+  width: 100%;
+}
+
+/* Estilo para el texto del pie de página */
+.footer p {
+  margin: 0;
+  font-size: 1rem;
+}
+
+/* Estilo para la imagen en el pie de página */
+.footer img {
+  width: 150px; /* Ajusta el tamaño según sea necesario */
+  margin-top: 10px;
+}
+

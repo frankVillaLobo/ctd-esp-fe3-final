@@ -9,7 +9,6 @@ const Navbar = () => {
   const handleClick = ()=>{
     dispatch({ type: "CHANGE_THEME"})
   }
-  console.log(state.theme)
   return (
     <nav className={state.theme==="dark" ? "navbar-dark":"navbar"}>
       {/* Aqui deberan agregar los liks correspondientes a las rutas definidas */}

@@ -27,7 +27,7 @@ const Card = ({ name, username, id }) => {
     setEmoji(favs.includes(id) ? "❤️" : "");
   }, [addFav,id]);
   return (
-    <div className="card">
+    <div className={state.theme==="dark" ? "card-dark":"card"}>
       <Link to={"/detail/" + id}>
         <h1>{name}</h1>
         {/* En cada card deberan mostrar en name - username y el id */}
